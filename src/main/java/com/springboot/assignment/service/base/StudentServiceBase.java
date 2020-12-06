@@ -33,6 +33,8 @@ public class StudentServiceBase implements StudentService {
     @Override
     public Student delete(Integer s) {
         Student student = studentRepository.findById(s);
+        /*student.setStatus(1);           //Usually we are not deleting data, so we can manage a status for deleted of not, 0 => not deleted, 1 => deleted
+        studentRepository.save(student)*/
         studentRepository.delete(student);
         return student;
     }
