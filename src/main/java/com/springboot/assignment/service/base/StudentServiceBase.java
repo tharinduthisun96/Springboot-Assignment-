@@ -21,11 +21,11 @@ public class StudentServiceBase implements StudentService {
 
     @Override
     public Student update(Student s) {
-        Student student = studentRepository.findById(s.getId());
+        /*Student student = studentRepository.findById(s.getId());
         student.setFirstName(s.getFirstName());
         student.setLastName(s.getLastName());
         student.setClassName(s.getClassName());
-        student.setYearOfBirth(s.getYearOfBirth());
+        student.setYearOfBirth(s.getYearOfBirth());*/
 
         return studentRepository.save(s);
     }
