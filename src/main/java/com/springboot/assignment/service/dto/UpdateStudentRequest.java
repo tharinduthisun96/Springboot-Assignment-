@@ -1,10 +1,19 @@
 package com.springboot.assignment.service.dto;
 
-public class CreateStudentRequest {
-
+public class UpdateStudentRequest {
+    private int id;
     private String firstName;
     private String lastName;
     private int yearOfBirth;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String className;
 
     public String getFirstName() {
@@ -38,5 +47,4 @@ public class CreateStudentRequest {
     public void setClassName(String className) {
         this.className = className;
     }
-
 }
